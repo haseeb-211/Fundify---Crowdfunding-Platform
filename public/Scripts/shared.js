@@ -1,6 +1,6 @@
 
 (function () {
-  const API_BASE_DEFAULT = "http://localhost:3000";
+  const API_BASE_DEFAULT = "https://fundify-crowdfunding-platform-production-6819.up.railway.app/";
   window.API_BASE = window.API_BASE || API_BASE_DEFAULT;
 
   window.apiUrl = function apiUrl(relativePath) {
