@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="./CSS/create-campign.css">
+</head>
+<body>
+
+
+<nav class="navbar">
+    <h2>Create Page</h2>
+    <button id="backBtn">back</button>
+  </nav>
+<div class="campaign-form">
+  <input id="title" placeholder="Title">
+  <textarea id="description" placeholder="Description"></textarea>
+  <input id="goal" type="number" placeholder="Goal">
+  <input id="deadline" type="date" min="">
+  <input id="image" type="file">
+  <div class="image-preview-container">
+    <img id="imagePreview" alt="Selected image preview"/>
+  </div>
+  
+  <button id="createBtn" type="button" onclick="createCampaign()">Create</button>
+  <div id="createFormStatus"></div>
+</div>
+
+<script src="./Scripts/shared.js"></script>
+<script src="./Scripts/create-campign.js"></script>
+</body>
+</html>

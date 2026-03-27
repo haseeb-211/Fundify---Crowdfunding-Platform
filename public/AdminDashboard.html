@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./CSS/AdminDashboard.css">
+</head>
+<body>
+  <nav class="navbar">
+    <h2>Admin Dashboard</h2>
+    <button id="backBtn">back</button>
+  </nav>
+
+  <div class="tabs">
+    <button onclick="showTab('users')">Users</button>
+    <button onclick="showTab('campaigns')">Campaigns</button>
+    <button onclick="showTab('pledges')">Pledges</button>
+  </div>
+
+  <div class="content">
+
+    <div id="users" class="tab"></div>
+    <div id="campaigns" class="tab"></div>
+    <div id="pledges" class="tab"></div>
+
+  </div>
+
+  <script src="./Scripts/shared.js"></script>
+  <script src="./Scripts/AdminDashboard.js"></script>
+</body>
+</html>

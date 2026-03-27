@@ -1,0 +1,107 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  background: #3333337f;
+  color: white;
+  padding: 0px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#backBtn {
+    height: 40px;
+    align-self: center;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background: #5b604c;
+    color: white;
+    border-radius: 6px;
+}
+
+
+/* Container for form fields */
+.campaign-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Inputs and textarea */
+.campaign-form input,
+.campaign-form textarea {
+    display: block;
+  width: 90%;
+  margin: 0 auto;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.campaign-form input:focus,
+.campaign-form textarea:focus {
+  outline: none;
+  border-color: #2c2f24;
+  box-shadow: 0 0 0 3px  #2c2f24;
+}
+
+/* Textarea extra height */
+.campaign-form textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Image preview container */
+.image-preview-container {
+  margin: 12px 0;
+  width: 100%;
+  max-height: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#imagePreview {
+  display: none;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* Button styling */
+#createBtn {
+  background-color:  #2c2f24;
+  color: #fff;
+  font-size: 1rem;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+#createBtn:hover {
+  background-color: #bb8f65;
+  transform: translateY(-2px);
+}
+
+/* Status message */
+#createFormStatus {
+  min-height: 18px;
+  margin-top: 10px;
+  color: #666;
+  font-size: 0.95rem;
+}

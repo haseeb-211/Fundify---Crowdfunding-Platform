@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- custom style -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Fundify</title>
+</head>
+
+<body>
+    <!-- Nav bar -->
+    <nav class="navbar">
+
+        <div class="logo">Fundify</div>
+
+        <ul class="nav-links" id="navLinks">
+            <li id="dashboardLink" style="display:none"><a href="AdminDashboard.html">Dashboard</a></li>
+            <li><a href="create-campign.html">Create Campagn</a></li>
+            <li><a href="my-campign.html">My Campagnes</a></li>
+            
+           
+
+            <div class="auth-buttons" id="authButtons">
+                <a href="login.html" class="login">Login</a>
+                <a href="signup.html" class="signup">Sign Up</a>
+            </div>
+            <div id="userPanel" style="display:none">
+                <span id="userName"></span>
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </ul>
+
+        <div class="toggle-btn" id="toggleBtn">☰</div>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero-scection" id="home">
+        <div class="hero-content">
+            <h1>Your Dream Our Fund</h1>
+            <p>✨ A place where backers and dreamers unite to make things happen ✨</p>
+            <button><a href="#campagins">Explore Now</a></button>
+        </div>
+
+    </section>
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="conatiner">
+            <div class="about-content">
+                <div class="about-left">
+                    <img src="./Assets/images/about.jpg" alt="">
+                </div>
+                <div class="about-right">
+                    <h1>About Us</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae voluptas, eaque nemo, expedita
+                        velit sunt inventore nisi dolorum repudiandae tempore cumque non temporibus dolores tenetur
+                        debitis numquam eos accusamus itaque, amet dolore animi at consectetur alias aspernatur?
+                        Obcaecati fugit aspernatur odio quo vitae, ex possimus quasi ut temporibus consectetur placeat
+                        nulla aperiam asperiores maiores reiciendis voluptate nostrum cum debitis sed laborum. Eos rerum
+                        nostrum veniam quod, porro ducimus id, nam maxime debitis velit dolor excepturi. Tenetur iste
+                        odio sunt cupiditate.</p>
+                    <button>Donate Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- services Section -->
+    <section class="services-section" id="services">
+        <h1 class="title">Our Services</h1>
+        <div class="services-content">
+            <div class="service-card">
+                <div class="header">
+                    <span>Give Donations</span>
+                    <i class="fa-solid fa-hand-holding-dollar"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vel explicabo ratione alias,
+                    ducimus minus unde, dolor soluta ipsam dicta enim obcaecati, commodi earum sint reiciendis nisi
+                    mollitia numquam accusamus. </p>
+            </div>
+            <div class="service-card">
+                <div class="header">
+                    <span>Provide Assistannce</span>
+                    <i class="fa-solid fa-handshake-angle"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vel explicabo ratione alias,
+                    ducimus minus unde, dolor soluta ipsam dicta enim obcaecati, commodi earum sint reiciendis nisi
+                    mollitia numquam accusamus. </p>
+            </div>
+            <div class="service-card">
+                <div class="header">
+                    <span>Create campagines</span>
+                    <i class="fa-solid fa-people-carry-box"></i>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti vel explicabo ratione alias,
+                    ducimus minus unde, dolor soluta ipsam dicta enim obcaecati, commodi earum sint reiciendis nisi
+                    mollitia numquam accusamus. </p>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Campagnes -->
+    <section class="campaigns" id="campagins">
+
+        <h2 class="section-title">Featured Campaigns</h2>
+
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search campaigns...">
+        </div>
+
+        <div class="campaign-container" id="camp-cont"></div>
+
+        <div style="text-align:center; margin-top:20px;">
+            <button id="viewAllBtn">View All Campaigns</button>
+        </div>
+
+    </section>
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+
+                    <h4>Fundify</h4>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum facilis magni dolorum obcaecati
+                        aspernatur! Quae unde laboriosam numquam aperiam, minus, nostrum quidem tempora ipsa corrupti
+                        cupiditate fugiat eaque obcaecati temporibus.</p>
+                    <div class="social-links">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+                <div class="explore">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#products">Campigns</a></li>
+                        <li><a href="#footer">Contact</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="donate">
+                    <h4>Donate</h4>
+                    <ul class="footer-cotact">
+                        <li>
+                            <a href="">Give Donation</a>
+                        </li>
+                        <li>
+                            <a href="">Become Volenteer</a>
+                        </li>
+                        <li>
+                            <a href="">Create Compange</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            Designed by <span>Haseeb Mohamed</span> @ 2026 , ALL Rights Reserved
+        </div>
+    </footer>
+    <!-- Scroll up button -->
+    <button id="scrollTopBtn">↑</button>
+    <script src="./Scripts/shared.js"></script>
+    <script src="./Scripts/app.js"></script>
+</body>
+
+</html>
